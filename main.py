@@ -5,7 +5,10 @@ from domain.dungeon import Dungeon
 
 
 def main(console_instance):
-    dungeon = Dungeon(console=console_instance, optional_walls_part=.65)
+    dungeon = Dungeon(
+        console=console_instance,
+        optional_walls_part=.65,
+    )
     dungeon.print_info()
     dungeon.print_layers()
 
